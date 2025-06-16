@@ -8,7 +8,7 @@ const uri = 'mongodb://localhost:27017';
 
 // Database and collection names
 const dbName = 'plp_bookstore';
-const collectionName = 'books';
+const collectionName = 'books';6  
 
 // Sample book data
 const books = [
@@ -173,10 +173,10 @@ async function insertBooks() {
     await client.close();
     console.log('Connection closed');
   }
-}
+}    
 
 // Run the function
-insertBooks().catch(console.error);
+insertBooks().catch(console.error); 
 
 /*
  * Example MongoDB queries you can try after running this script:
@@ -195,4 +195,4 @@ insertBooks().catch(console.error);
  *
  * 5. Find in-stock books:
  *    db.books.find({ in_stock: true })
- */ 
+ */  
